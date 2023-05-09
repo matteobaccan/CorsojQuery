@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>jQuery Example</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <h1>Animate</h1>
+    <button id="but1">Applica l'effetto ANIMATE</button>
+    <button id="but2">Ferma l'effetto ANIMATE</button>
+    <br><br>
+    <div id="div1" style="width:80px;height:80px;background-color:red;">ROSSO</div><br>    
+    <script>
+        <!-- jQuery ready compatto -->
+        $(function () {
+            $("#but1").click(function () {
+                $("#div1").animate({
+                    opacity: '0.5',
+                    height: '150px',
+                    width: '150px'
+                }   , 3000);
+            });
+            $("#but2").click(function () {
+                $("#div1").stop();
+            });
+        });
+    </script>
+</body>
+
+</html>

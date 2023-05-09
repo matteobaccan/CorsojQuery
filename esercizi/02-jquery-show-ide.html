@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>jQuery Example</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <span onclick="toggleh1()">Toggle h1</span>
+    <span onclick="nascondih1()">Nascondi h1</span>
+    <span onclick="mostrah1()">Mostra h1</span>
+    <h1>Hello World!</h1>
+    <script>
+        <!-- jQuery -->
+        $(document).ready(function () {
+            $("h1").css("color", "red");
+        });
+
+        function toggleh1() {
+            $("h1").toggle();
+        }
+
+        function nascondih1() {
+            $("h1").hide();
+        }
+
+        function mostrah1() {
+            $("h1").show();
+        }
+    </script>
+</body>
+
+</html>

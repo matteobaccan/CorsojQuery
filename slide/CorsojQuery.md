@@ -149,7 +149,135 @@ __\$("p").toggle()__ - alterna tra nascondi e mostra gli elementi \<p>
 
 ---
 
+## jQuery fadeIn() e fadeOut()
 
+fadeIn() e fadeOut() sono due metodi di jQuery che consentono di mostrare e nascondere gli elementi HTML con un effetto di dissolvenza.
+
+fadeIn() mostra un elemento HTML con un effetto di dissolvenza.
+fadeOut() nasconde un elemento HTML con un effetto di dissolvenza.
+
+Sintassi
+
+```js
+$(selector).fadeIn(speed,callback);
+$(selector).fadeOut(speed,callback);
+```
+
+Esempio
+
+```js
+$("#div1").fadeIn();
+$("#div2").fadeIn("slow");
+$("#div3").fadeIn(10000);
+```
+
+---
+
+## jQuery slideDown() e slideUp()
+
+slideDown() e slideUp() sono due metodi di jQuery che consentono di mostrare e nascondere gli elementi HTML con un effetto di scorrimento.
+
+slideDown() mostra un elemento HTML con un effetto di scorrimento.
+slideUp() nasconde un elemento HTML con un effetto di scorrimento.
+
+Sintassi
+
+```js
+$(selector).slideDown(speed,callback);
+$(selector).slideUp(speed,callback);
+```
+
+Esempio
+
+```js
+$("#div1").slideDown();
+$("#div2").slideDown("slow");
+$("#div3").slideDown(10000);
+```
+
+---
+
+## jQuery animate()
+
+Il metodo animate() di jQuery consente di creare animazioni personalizzate sugli elementi HTML.
+
+Sintassi:
+  
+```js
+$(selector).animate({params},speed,callback);
+```
+
+Esempio:
+
+```js
+$("#div1").animate({
+    opacity: '0.5',
+    height: '150px',
+    width: '150px'
+}   , 3000);
+```
+
+---
+
+## jQuery stop()
+
+Il metodo stop() di jQuery interrompe le animazioni o le code in esecuzione per gli elementi selezionati.
+
+Sintassi
+
+```js
+$(selector).stop(stopAll,goToEnd);
+```
+
+Esempio
+
+```js
+$("#div1").stop();
+```
+
+---
+
+## jQuery Callback
+
+Una callback è una funzione che viene passata come argomento ad un'altra funzione e viene eseguita dopo che la funzione è stata completata.
+
+jQuery callback sono state progettate per essere utilizzate con le animazioni, ma possono essere utilizzate anche con altri metodi.
+
+Sintassi
+
+```js
+$(selector).hide(speed,callback);
+```
+
+Esempio
+
+```js
+$("button").click(function(){
+  $("p").hide("slow", function(){
+    alert("Il paragrafo è stato nascosto");
+  });
+});
+```
+
+---
+
+## jQuery Chaining
+
+La concatenazione è una tecnica per collegare più metodi di jQuery insieme.
+
+La concatenazione consente di eseguire più azioni sugli stessi elementi HTML selezionati con una sola riga di codice.
+
+Sintassi
+
+```js
+$(selector).hide().show().slideUp().slideDown();
+```
+
+Esempio
+
+```js
+$("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+```
 
 ---
 
