@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>jQuery Example</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <h1>Hello World!</h1>
+    <h2>Hello World!</h2>
+    <script>
+        <!-- jQuery -->
+        $(document).ready(function () {
+            $("h1").css("color", "red");
+        });
+
+        <!-- Vanilla JavaScript -->
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector("h2").style.color = "blue";
+        });
+    </script>
+</body>
+
+</html>
