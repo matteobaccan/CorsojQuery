@@ -281,6 +281,43 @@ $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
 
 ---
 
+## jQuery text / html / val
+
+Il metodo text() imposta o restituisce il testo (contenuto) di elementi selezionati.
+Il metodo html() imposta o restituisce il contenuto (HTML) degli elementi selezionati.
+Il metodo val() imposta o restituisce il valore dell'attributo value degli elementi selezionati.
+
+Sintassi
+
+```js
+$(selector).text();
+$(selector).text(text);
+$(selector).html();
+$(selector).html(htmlString);
+$(selector).val();
+$(selector).val(value);
+```
+
+---
+
+## jQuery text / html / val - utilizzo
+
+Esempio
+
+```js
+$("#btn1").click(function(){
+  alert("Testo: " + $("#test").text());
+});
+$("#btn2").click(function(){
+  alert("HTML: " + $("#test").html());
+});
+$("#btn3").click(function(){
+  alert("Valore: " + $("#test").val());
+});
+```
+
+---
+
 ## Fonti usate per la creazione di queste slide
 
 <https://it.wikipedia.org> : definizioni e argomenti
