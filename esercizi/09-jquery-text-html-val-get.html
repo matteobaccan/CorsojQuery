@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="it">
 
 <head>
     <title>jQuery Example</title>
@@ -6,24 +7,27 @@
 </head>
 
 <body>
-    <h1>Callback</h1>
+    <h1>Text/html/val</h1>
     <button id="btn1">Callback 1</button>
     <button id="btn2">Callback 2</button>
     <button id="btn3">Callback 3</button>
-    <div id="test">Testo di prova</div>
-    <div id="test2">Testo di prova 2</div>
+
+    <div id="test">Testo di <span style="color:red;">prova</span></div>
+    <div id="test2">Testo di <span style="color:red;">prova 2</span></div>
     <input type="text" id="test3" value="Testo di prova 3">
+
+    <div id="output" style="width: 400px; height: 100px; border: 1px solid red;"></div>
     <i>
         <script>
             $(function () {
                 $("#btn1").click(function () {
-                    alert("Testo: " + $("#test").text());
+                    $("#output").text("text: |" + $("#test").text() + "|");
                 });
                 $("#btn2").click(function () {
-                    alert("HTML: " + $("#test").html());
+                    $("#output").text("html: |" + $("#test2").html() + "|");
                 });
                 $("#btn3").click(function () {
-                    alert("Valore: " + $("#test").val());
+                    $("#output").text("Val: |" + $("#test3").val() + "|");
                 });
             });
         </script>

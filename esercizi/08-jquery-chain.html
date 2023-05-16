@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="it">
 
 <head>
     <title>jQuery Example</title>
@@ -6,11 +7,10 @@
 </head>
 
 <body>
-    <h1>Callback</h1>
+    <h1>Chain</h1>
     <button>Callback</button>
     <p id="p1" style="border: 1px solid black">Questo è un paragrafo!</p>
     <script>
-        <!-- jQuery ready compatto -->
         $(function () {
             $("button").click(function () {
                 $("#p1").css("color", "red").slideUp(2000).slideDown(2000);

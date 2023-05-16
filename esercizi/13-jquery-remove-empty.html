@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="it">
+
+
+<head>
+    <title>jQuery Example</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <h1>Remove - Empty</h1>
+    <button id="btn1">Empty</button>
+    <button id="btn2">Append</button>
+    <button id="btn3">Remove</button>
+
+    <div id="test">Testo di <span style="color:red;">prova</span></div>
+
+    <i>
+        <script>
+            $(function () {
+                $("#btn1").click(function () {
+                    $("#test").empty();
+                });
+                $("#btn2").click(function () {
+                    $("#test").append("-append-");
+                });
+                $("#btn3").click(function () {
+                    $("#test").remove();
+                });
+            });
+        </script>
+</body>
+
+</html>

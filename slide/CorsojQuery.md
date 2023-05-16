@@ -61,7 +61,7 @@ In questo esempio jQuery viene presa dalla CDN del sito di jQuery
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="it">
   <head>
     <title>jQuery Example</title>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -281,7 +281,7 @@ $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
 
 ---
 
-## jQuery text / html / val
+## jQuery text / html / val - get/set
 
 Il metodo text() imposta o restituisce il testo (contenuto) di elementi selezionati.
 Il metodo html() imposta o restituisce il contenuto (HTML) degli elementi selezionati.
@@ -302,18 +302,129 @@ $(selector).val(value);
 
 ## jQuery text / html / val - utilizzo
 
+Esempio di GET
+
+```js
+$("#test").text();
+$("#test2").html();
+$("#test3").val();
+```
+
+Esempio di SET
+
+```js
+$("#test").text("Nuovo testo");
+$("#test2").html("Nuovo <b>testo</b>");
+$("#test3").val("Nuovo testo");
+```
+
+---
+
+## jQuery - append() / prepend()
+
+Il metodo append() inserisce il contenuto all'interno dell'elemento selezionato, dopo il contenuto esistente.
+Il metodo prepend() inserisce il contenuto all'interno dell'elemento selezionato, prima del contenuto esistente.
+
+Sintassi
+
+```js
+$(selector).append(content);
+$(selector).prepend(content);
+```
+
 Esempio
 
 ```js
-$("#btn1").click(function(){
-  alert("Testo: " + $("#test").text());
-});
-$("#btn2").click(function(){
-  alert("HTML: " + $("#test").html());
-});
-$("#btn3").click(function(){
-  alert("Valore: " + $("#test").val());
-});
+$("p").append("-testo dopo-");
+$("p").prepend("-testo prima-");
+```
+
+---
+
+## jQuery - after() / before()
+
+Il metodo after() inserisce il contenuto dopo l'elemento selezionati.
+Il metodo before() inserisce il contenuto prima dell'elemento selezionati.
+
+Sintassi
+
+```js
+$(selector).after(content);
+$(selector).before(content);
+```
+
+Esempio
+
+```js
+$("p").after("Testo dopo");
+$("p").before("Testo prima");
+```
+
+---
+
+## jQuery - remove() / empty()
+
+Il metodo remove() rimuove gli elementi selezionati e i loro figli.
+Il metodo empty() rimuove il contenuto degli elementi selezionati e i loro figli.
+
+Sintassi
+
+```js
+$(selector).remove([selector]);
+$(selector).empty();
+```
+
+Esempio
+
+```js
+$("p").remove(".test");
+$("p").empty();
+```
+
+---
+
+## jQuery - addClass() / removeClass() / toggleClass()
+
+Il metodo addClass() aggiunge una o più classi agli elementi selezionati.
+Il metodo removeClass() rimuove una o più classi dagli elementi selezionati.
+Il metodo toggleClass() alterna tra aggiungere / rimuovere le classi dagli elementi selezionati.
+
+Sintassi
+
+```js
+$(selector).addClass(classname);
+$(selector).removeClass(classname);
+$(selector).toggleClass(classname);
+```
+
+Esempio
+
+```js
+$("p").addClass("test");
+$("p").removeClass("test");
+$("p").toggleClass("test");
+```
+
+---
+
+## jQuery - css()
+
+Il metodo css() imposta o restituisce una o più proprietà di stile per gli elementi selezionati.
+
+Sintassi
+
+```js
+$(selector).css(propertyname);
+$(selector).css(propertyname, value);
+$(selector).css({propertyname:value, propertyname:value, ...});
+```
+
+Esempio
+
+```js
+$("p").css("background-color");
+$("p").css("background-color", "yellow");
+$("p").css({"background-color": "red", "font-size": "200%"});
 ```
 
 ---

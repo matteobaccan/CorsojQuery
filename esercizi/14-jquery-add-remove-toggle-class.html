@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+
+
+<head>
+    <title>jQuery Example</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+        .test1 {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .test2 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>add -remove- toggle class</h1>
+    <button id="btn1">Add</button>
+    <button id="btn2">Remove</button>
+    <button id="btn3">Toggle</button>
+
+    <div id="test" class="test1">Testo di <span style="color:red;">prova</span></div>
+
+    <i>
+        <script>
+            $(function () {
+                $("#btn1").click(function () {
+                    $("#test").addClass("test2");
+                });
+                $("#btn2").click(function () {
+                    $("#test").removeClass("test2");
+                });
+                $("#btn3").click(function () {
+                    $("#test").toggleClass("test2");
+                });
+            });
+        </script>
+</body>
+
+</html>

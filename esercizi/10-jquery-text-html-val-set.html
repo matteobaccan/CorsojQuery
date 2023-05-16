@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>jQuery Example</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <h1>Text/html/val</h1>
+    <button id="btn1">Callback 1</button>
+    <button id="btn2">Callback 2</button>
+    <button id="btn3">Callback 3</button>
+
+    <div id="test">Testo di <span style="color:red;">prova</span></div>
+    <div id="test2">Testo di <span style="color:red;">prova 2</span></div>
+    <input type="text" id="test3" value="Testo di prova 3">
+    <i>
+        <script>
+            $(function () {
+                $("#btn1").click(function () {
+                    $("#test").text("Nuovo testo <span style='color:red;'>prova</span>");
+                });
+                $("#btn2").click(function () {
+                    $("#test2").html("Nuovo testo <span style='color:red;'>prova</span>");
+                });
+                $("#btn3").click(function () {
+                    $("#test3").val("Nuovo testo <span style='color:red;'>prova</span>");
+                });
+            });
+        </script>
+</body>
+
+</html>
