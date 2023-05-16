@@ -7,3 +7,17 @@ jQuery è uno strumento largamente diffuso nello sviluppo web e anche se i moder
 All'interno di questo corso proverò a guidarvi nell'uso di queste tecnologia largamente diffusa ed utilizzata, facendo dei paralleli fra il suo utilizzo e l'utilizzo di vanilla JavaScript.
 
 __[Scarica gratuitamente le slide](https://raw.githubusercontent.com/matteobaccan/CorsojQuery/main/slide/CorsojQuery.pdf)__
+
+## Argomenti trattati
+
+- Introduzione
+- Show/Hide
+- Fade
+- Slide
+- Animazioni
+- Callback
+- Chaining
+- HTML, text e val
+- Prepend, append, before, after
+- Remove, add e toggle class
+- CSS
