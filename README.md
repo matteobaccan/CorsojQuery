@@ -1,6 +1,7 @@
 # CorsojQuery
 
 [![Genera PDF](https://github.com/matteobaccan/CorsojQuery/actions/workflows/generatepdf.yml/badge.svg)](https://github.com/matteobaccan/CorsojQuery/actions/workflows/generatepdf.yml)
+[![HTML5 Validation](https://github.com/matteobaccan/CorsojQuery/actions/workflows/validation.yml/badge.svg)](https://github.com/matteobaccan/CorsojQuery/actions/workflows/validation.yml)
 
 jQuery è uno strumento largamente diffuso nello sviluppo web e anche se i moderni sviluppi tendono a non usare questa libreria, è importante conoscerne il funzionamento e le potenzialità.
 
