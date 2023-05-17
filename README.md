@@ -1,4 +1,4 @@
-# CorsojQuery
+# Corso jQuery
 
 [![Genera PDF](https://github.com/matteobaccan/CorsojQuery/actions/workflows/generatepdf.yml/badge.svg)](https://github.com/matteobaccan/CorsojQuery/actions/workflows/generatepdf.yml)
 [![HTML5 Validation](https://github.com/matteobaccan/CorsojQuery/actions/workflows/validation.yml/badge.svg)](https://github.com/matteobaccan/CorsojQuery/actions/workflows/validation.yml)
