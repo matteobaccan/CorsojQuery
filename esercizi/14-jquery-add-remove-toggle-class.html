@@ -10,6 +10,7 @@
             border: 1px solid black;
             padding: 10px;
         }
+
         .test2 {
             background-color: yellow;
         }
@@ -24,20 +25,19 @@
 
     <div id="test" class="test1">Testo di <span style="color:red;">prova</span></div>
 
-    <i>
-        <script>
-            $(function () {
-                $("#btn1").click(function () {
-                    $("#test").addClass("test2");
-                });
-                $("#btn2").click(function () {
-                    $("#test").removeClass("test2");
-                });
-                $("#btn3").click(function () {
-                    $("#test").toggleClass("test2");
-                });
+    <script>
+        $(function () {
+            $("#btn1").click(function () {
+                $("#test").addClass("test2");
             });
-        </script>
+            $("#btn2").click(function () {
+                $("#test").removeClass("test2");
+            });
+            $("#btn3").click(function () {
+                $("#test").toggleClass("test2");
+            });
+        });
+    </script>
 </body>
 
 </html>

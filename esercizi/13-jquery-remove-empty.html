@@ -15,20 +15,19 @@
 
     <div id="test">Testo di <span style="color:red;">prova</span></div>
 
-    <i>
-        <script>
-            $(function () {
-                $("#btn1").click(function () {
-                    $("#test").empty();
-                });
-                $("#btn2").click(function () {
-                    $("#test").append("-append-");
-                });
-                $("#btn3").click(function () {
-                    $("#test").remove();
-                });
+    <script>
+        $(function () {
+            $("#btn1").click(function () {
+                $("#test").empty();
             });
-        </script>
+            $("#btn2").click(function () {
+                $("#test").append("-append-");
+            });
+            $("#btn3").click(function () {
+                $("#test").remove();
+            });
+        });
+    </script>
 </body>
 
 </html>

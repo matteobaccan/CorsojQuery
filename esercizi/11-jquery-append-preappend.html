@@ -14,17 +14,16 @@
 
     <div id="test">Testo di <span style="color:red;">prova</span></div>
 
-    <i>
-        <script>
-            $(function () {
-                $("#btn1").click(function () {
-                    $("#test").append("- dopo testo <span style='color:red;'>prova</span> -");
-                });
-                $("#btn2").click(function () {
-                    $("#test").prepend("- prima testo <span style='color:red;'>prova</span> -");
-                });
+    <script>
+        $(function () {
+            $("#btn1").click(function () {
+                $("#test").append("- dopo testo <span style='color:red;'>prova</span> -");
             });
-        </script>
+            $("#btn2").click(function () {
+                $("#test").prepend("- prima testo <span style='color:red;'>prova</span> -");
+            });
+        });
+    </script>
 </body>
 
 </html>

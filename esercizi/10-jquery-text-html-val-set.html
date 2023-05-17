@@ -15,20 +15,19 @@
     <div id="test">Testo di <span style="color:red;">prova</span></div>
     <div id="test2">Testo di <span style="color:red;">prova 2</span></div>
     <input type="text" id="test3" value="Testo di prova 3">
-    <i>
-        <script>
-            $(function () {
-                $("#btn1").click(function () {
-                    $("#test").text("Nuovo testo <span style='color:red;'>prova</span>");
-                });
-                $("#btn2").click(function () {
-                    $("#test2").html("Nuovo testo <span style='color:red;'>prova</span>");
-                });
-                $("#btn3").click(function () {
-                    $("#test3").val("Nuovo testo <span style='color:red;'>prova</span>");
-                });
+    <script>
+        $(function () {
+            $("#btn1").click(function () {
+                $("#test").text("Nuovo testo <span style='color:red;'>prova</span>");
             });
-        </script>
+            $("#btn2").click(function () {
+                $("#test2").html("Nuovo testo <span style='color:red;'>prova</span>");
+            });
+            $("#btn3").click(function () {
+                $("#test3").val("Nuovo testo <span style='color:red;'>prova</span>");
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -17,20 +17,19 @@
     <input type="text" id="test3" value="Testo di prova 3">
 
     <div id="output" style="width: 400px; height: 100px; border: 1px solid red;"></div>
-    <i>
-        <script>
-            $(function () {
-                $("#btn1").click(function () {
-                    $("#output").text("text: |" + $("#test").text() + "|");
-                });
-                $("#btn2").click(function () {
-                    $("#output").text("html: |" + $("#test2").html() + "|");
-                });
-                $("#btn3").click(function () {
-                    $("#output").text("Val: |" + $("#test3").val() + "|");
-                });
+    <script>
+        $(function () {
+            $("#btn1").click(function () {
+                $("#output").text("text: |" + $("#test").text() + "|");
             });
-        </script>
+            $("#btn2").click(function () {
+                $("#output").text("html: |" + $("#test2").html() + "|");
+            });
+            $("#btn3").click(function () {
+                $("#output").text("Val: |" + $("#test3").val() + "|");
+            });
+        });
+    </script>
 </body>
 
 </html>
