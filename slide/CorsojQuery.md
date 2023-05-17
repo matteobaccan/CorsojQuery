@@ -392,9 +392,9 @@ Il metodo toggleClass() alterna tra aggiungere / rimuovere le classi dagli eleme
 Sintassi
 
 ```js
-$(selector).addClass(classname);
-$(selector).removeClass(classname);
-$(selector).toggleClass(classname);
+$(selector).addClass(className);
+$(selector).removeClass(className);
+$(selector).toggleClass(className);
 ```
 
 Esempio
@@ -414,9 +414,9 @@ Il metodo css() imposta o restituisce una o più proprietà di stile per gli ele
 Sintassi
 
 ```js
-$(selector).css(propertyname);
-$(selector).css(propertyname, value);
-$(selector).css({propertyname:value, propertyname:value, ...});
+$(selector).css(propertyName);
+$(selector).css(propertyName, value);
+$(selector).css({propertyName:value, propertyName:value, ...});
 ```
 
 Esempio

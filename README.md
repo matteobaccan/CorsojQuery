@@ -9,6 +9,8 @@ All'interno di questo corso proverò a guidarvi nell'uso di queste tecnologia la
 
 __[Scarica gratuitamente le slide](https://raw.githubusercontent.com/matteobaccan/CorsojQuery/main/slide/CorsojQuery.pdf)__
 
+Tutti gli esempi sono disponibili su  [![CodePen](https://img.shields.io/badge/CodePen-open-blue?logo=codepen)](https://codepen.io/collection/LPzxzo)
+
 ## Argomenti trattati
 
 - Introduzione
