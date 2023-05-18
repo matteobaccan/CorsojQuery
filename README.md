@@ -24,3 +24,5 @@ Tutti gli esempi sono disponibili su  [![CodePen](https://img.shields.io/badge/C
 - Prepend, append, before, after
 - Remove, add e toggle class
 - CSS
+- Dimensioni
+- Traversing

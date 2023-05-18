@@ -429,6 +429,187 @@ $("p").css({"background-color": "red", "font-size": "200%"});
 
 ---
 
+## jQuery - dimensioni - width() / height()
+
+Il metodo width() imposta o restituisce la larghezza degli elementi selezionati.
+Il metodo height() imposta o restituisce l'altezza degli elementi selezionati.
+
+Sintassi
+
+```js
+$(selector).width();
+$(selector).width(value);
+$(selector).height();
+$(selector).height(value);
+```
+
+Esempio
+
+```js
+$("p").width();
+$("p").width("500px");
+$("p").height();
+$("p").height("500px");
+```
+
+---
+
+## jQuery - dimensioni - innerWidth() / innerHeight()
+
+Il metodo innerWidth() restituisce la larghezza di un elemento, inclusi il padding.
+Il metodo innerHeight() restituisce l'altezza di un elemento, inclusi il padding.
+
+Sintassi
+
+```js
+$(selector).innerWidth();
+$(selector).innerHeight();
+```
+
+Esempio
+
+```js
+$("p").innerWidth();
+$("p").innerHeight();
+```
+
+---
+
+## jQuery - dimensioni - outerWidth() / outerHeight()
+
+Il metodo outerWidth() restituisce la larghezza di un elemento, inclusi il padding e il bordo.
+Il metodo outerHeight() restituisce l'altezza di un elemento, inclusi il padding e il bordo.
+In entrambi i casi, passando true come argomento, è possibile includere anche il margine.
+
+Sintassi
+
+```js
+$(selector).outerWidth([true]);
+$(selector).outerHeight([true]);
+```
+
+Esempio
+
+```js
+$("p").outerWidth(); $("p").outerHeight();
+$("p").outerWidth(true); $("p").outerHeight(true);
+```
+
+---
+
+## jQuery - traversing
+
+Il traversing è il processo di scorrere gli elementi HTML per trovare (o selezionare) gli elementi HTML specificati.
+
+jQuery dispone di una serie di metodi per poter effettuare correttamente il traversing.
+
+Lo scopo è quello di navigare all'interno del DOM per trovare gli elementi che si desidera manipolare.
+
+Gli elementi vengono catalogati in genitori (ancestors) e figli (descendants) e fratelli (siblings).
+
+---
+
+## jQuery - traversing - ancestors
+
+Gli elementi HTML possono essere visti come un albero gerarchico.
+L'elemento superiore è l'elemento radice, e gli elementi che sono al di sotto di esso sono i suoi figli.
+Gli elementi che sono al di sotto dei figli di un elemento sono i suoi nipoti.
+
+Sintassi
+
+```js
+$(selector).parent();
+$(selector).parents();
+$(selector).parentsUntil();
+```
+
+Esempio
+
+```js
+$("span").parent();
+$("span").parents();
+$("span").parentsUntil("div");
+```
+
+---
+
+## jQuery - traversing - descendants
+
+Gli elementi HTML possono essere visti come un albero gerarchico.
+L'elemento superiore è l'elemento radice, e gli elementi che sono al di sotto di esso sono i suoi figli.
+Gli elementi che sono al di sotto dei figli di un elemento sono i suoi nipoti.
+
+Sintassi
+
+```js
+$(selector).children();
+$(selector).find();
+```
+
+Esempio
+
+```js
+$("div").children();
+$("div").find("span");
+```
+
+---
+
+## jQuery - traversing - siblings
+
+Gli elementi HTML possono essere visti come un albero gerarchico.
+L'elemento superiore è l'elemento radice, e gli elementi che sono al di sotto di esso sono i suoi figli.
+Gli elementi che sono al di sotto dei figli di un elemento sono i suoi nipoti.
+
+Sintassi
+
+```js
+$(selector).siblings();
+$(selector).next();
+$(selector).nextAll();
+$(selector).nextUntil();
+$(selector).prev();
+$(selector).prevAll();
+$(selector).prevUntil();
+```
+
+Esempio
+
+```js
+$("div").siblings();
+$("div").next();
+$("div").nextAll();
+```
+
+---
+
+## jQuery - traversing - filter
+
+Il metodo filter() consente di specificare un criterio.
+Gli elementi che soddisfano il criterio vengono restituiti.
+
+Sintassi
+
+```js
+$(selector).filter(filter);
+```
+
+Esempio
+
+```js
+$("div").filter(".test");
+```
+
+---
+
+## jQuery - dimensioni - riassunto
+
+![center width:900px](img/jquery_dimensions.jpg)
+
+<https://www.tutorialspoint.com/jquery/jquery-dimensions.htm>
+
+---
+
 ## Fonti usate per la creazione di queste slide
 
 <https://it.wikipedia.org> : definizioni e argomenti
