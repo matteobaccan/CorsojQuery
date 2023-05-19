@@ -26,3 +26,4 @@ Tutti gli esempi sono disponibili su  [![CodePen](https://img.shields.io/badge/C
 - CSS
 - Dimensioni
 - Traversing
+- Filter

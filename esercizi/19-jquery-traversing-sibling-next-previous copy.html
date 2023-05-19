@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <title>jQuery Example</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <style>
+    .box {
+      border: 1px solid black;
+      padding: 10px;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Traversing</h1>
+  <button id="btn1">sibling</button>
+  <button id="btn2">next</button>
+  <button id="btn3">prev</button>
+
+  <div id="grandgrandparent" class="box">
+    grandgrandparent
+    <div id="grandparent" class="box">
+      grandparent
+      <div id="parent" class="box">
+        parent1
+        <div id="test0" class="box">child</div>
+        <div id="test1" class="box">child</div>
+        <div id="test2" class="box">child</div>
+        <div id="test3" class="box">child</div>
+        <div id="test4" class="box">child</div>
+      </div>
+      <div id="parent2" class="box">
+        parent2
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(function () {
+      $("#btn1").click(function () {
+        $("#test2").siblings().css( "background-color", "red" );
+      });
+      $("#btn2").click(function () {
+        $("#test2").next().css( "background-color", "grey" );
+      });
+      $("#btn3").click(function () {
+        $("#test2").prev().css( "background-color", "green" );
+      });
+    });
+  </script>
+</body>
+
+</html>

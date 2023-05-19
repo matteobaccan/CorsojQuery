@@ -429,6 +429,14 @@ $("p").css({"background-color": "red", "font-size": "200%"});
 
 ---
 
+## jQuery - dimensioni - riassunto
+
+![center width:900px](img/jquery_dimensions.jpg)
+
+<https://www.tutorialspoint.com/jquery/jquery-dimensions.htm>
+
+---
+
 ## jQuery - dimensioni - width() / height()
 
 Il metodo width() imposta o restituisce la larghezza degli elementi selezionati.
@@ -573,6 +581,10 @@ $(selector).prevAll();
 $(selector).prevUntil();
 ```
 
+---
+
+## jQuery - traversing - siblings - esempio
+
 Esempio
 
 ```js
@@ -599,14 +611,6 @@ Esempio
 ```js
 $("div").filter(".test");
 ```
-
----
-
-## jQuery - dimensioni - riassunto
-
-![center width:900px](img/jquery_dimensions.jpg)
-
-<https://www.tutorialspoint.com/jquery/jquery-dimensions.htm>
 
 ---
 
