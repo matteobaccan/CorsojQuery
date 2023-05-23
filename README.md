@@ -1,15 +1,13 @@
-# Corso jQuery
+# ![jQuery](slide/img/JQuery-Logo.svg)
 
-[![Genera PDF](https://github.com/matteobaccan/CorsojQuery/actions/workflows/generatepdf.yml/badge.svg)](https://github.com/matteobaccan/CorsojQuery/actions/workflows/generatepdf.yml)
-[![HTML5 Validation](https://github.com/matteobaccan/CorsojQuery/actions/workflows/validation.yml/badge.svg)](https://github.com/matteobaccan/CorsojQuery/actions/workflows/validation.yml)
+## Corso jQuery
 
 jQuery è uno strumento largamente diffuso nello sviluppo web e anche se i moderni sviluppi tendono a non usare questa libreria, è importante conoscerne il funzionamento e le potenzialità.
 
 All'interno di questo corso proverò a guidarvi nell'uso di queste tecnologia largamente diffusa ed utilizzata, facendo dei paralleli fra il suo utilizzo e l'utilizzo di vanilla JavaScript.
 
-__[Scarica gratuitamente le slide](https://raw.githubusercontent.com/matteobaccan/CorsojQuery/main/slide/CorsojQuery.pdf)__
-
-Tutti gli esempi sono disponibili su  [![CodePen](https://img.shields.io/badge/CodePen-open-blue?logo=codepen)](https://codepen.io/collection/LPzxzo)
+[![Slide](https://img.shields.io/badge/GitHub-slide-blue?logo=github)](https://raw.githubusercontent.com/matteobaccan/CorsojQuery/main/slide/CorsojQuery.pdf)
+[![CodePen](https://img.shields.io/badge/CodePen-esempi-blue?logo=codepen)](https://codepen.io/collection/LPzxzo)
 
 ## Argomenti trattati
 
@@ -27,3 +25,8 @@ Tutti gli esempi sono disponibili su  [![CodePen](https://img.shields.io/badge/C
 - Dimensioni
 - Traversing
 - Filter
+- AJAX
+- AJAX e free API
+
+[![Generazione PDF](https://github.com/matteobaccan/CorsojQuery/actions/workflows/generatepdf.yml/badge.svg)](https://github.com/matteobaccan/CorsojQuery/actions/workflows/generatepdf.yml)
+[![Validazione HTML5](https://github.com/matteobaccan/CorsojQuery/actions/workflows/validation.yml/badge.svg)](https://github.com/matteobaccan/CorsojQuery/actions/workflows/validation.yml)

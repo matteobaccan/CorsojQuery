@@ -5,7 +5,7 @@ paginate: true
 backgroundColor: #fff
 backgroundImage: url('https://marp.app/assets/hero-background.svg')
 marp: true
-footer: https://github.com/matteobaccan/CorsoAI
+footer: https://github.com/matteobaccan/CorsojQuery
 ---
 
 # Corso jQuery
@@ -696,6 +696,29 @@ Eccone alcuni
 
 <https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/>
 <https://github.com/public-apis/public-apis>
+
+---
+
+## In preparazione -----------------------------
+
+---
+
+## jQuery - eventi
+
+jQuery ha una serie di metodi per gestire gli eventi.
+Si possono sia prevedere dei comportamenti rispetto ad un evento, che invocare un esempio stesso.
+
+Sintassi
+
+```js
+$(selector).event();
+```
+
+Esempio
+
+```js
+$("p").click();
+```
 
 ---
 
