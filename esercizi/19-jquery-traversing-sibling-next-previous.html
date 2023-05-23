@@ -7,8 +7,8 @@
   <style>
     .box {
       border: 1px solid black;
-      padding: 10px;
-      margin: 10px;
+      padding: 5px;
+      margin: 5px;
     }
   </style>
 </head>
@@ -25,11 +25,11 @@
       grandparent
       <div id="parent" class="box">
         parent1
-        <div id="test0" class="box">child</div>
-        <div id="test1" class="box">child</div>
-        <div id="test2" class="box">child</div>
-        <div id="test3" class="box">child</div>
-        <div id="test4" class="box">child</div>
+        <div id="test0" class="box">test0</div>
+        <div id="test1" class="box">test1</div>
+        <div id="test2" class="box">test2</div>
+        <div id="test3" class="box">test3</div>
+        <div id="test4" class="box">test4</div>
       </div>
       <div id="parent2" class="box">
         parent2
@@ -38,15 +38,15 @@
   </div>
 
   <script>
-    $(function () {
-      $("#btn1").click(function () {
-        $("#test2").siblings().css( "background-color", "red" );
+    $(function() {
+      $("#btn1").click(function() {
+        $("#test2").siblings().css("background-color", "red");
       });
-      $("#btn2").click(function () {
-        $("#test2").next().css( "background-color", "grey" );
+      $("#btn2").click(function() {
+        $("#test2").next().css("background-color", "grey");
       });
-      $("#btn3").click(function () {
-        $("#test2").prev().css( "background-color", "green" );
+      $("#btn3").click(function() {
+        $("#test2").prev().css("background-color", "green");
       });
     });
   </script>

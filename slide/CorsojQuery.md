@@ -614,6 +614,88 @@ $("div").filter(".test");
 
 ---
 
+## jQuery - AJAX
+
+AJAX è una tecnica per l'accesso asincrono a un server web da una pagina web.
+AJAX consente di aggiornare una pagina web senza dover ricaricare la pagina.
+
+AJAX è un acronimo di Asynchronous JavaScript and XML.
+In realtà, il termine AJAX è un po' impreciso perché AJAX può essere utilizzato con altri formati di dati, come JSON.
+
+Sintassi
+
+```js
+$(selector).load(URL,data,callback);
+```
+
+Esempio
+
+```js
+$("button").click(function(){
+  $("#div1").load("demo_test.txt");
+});
+```
+
+---
+
+## jQuery - AJAX - get()
+
+Il metodo get() carica i dati dal server utilizzando una richiesta HTTP GET.
+
+Sintassi
+
+```js
+$.get(URL,callback);
+```
+
+Esempio
+
+```js
+$("button").click(function(){
+  $.get("demo_test.asp", function(data, status){
+    alert("Data: " + data + "\nStatus: " + status);
+  });
+});
+```
+
+---
+
+## jQuery - AJAX - post()
+
+Il metodo post() carica i dati dal server utilizzando una richiesta HTTP POST.
+
+Sintassi
+
+```js
+$.post(URL,data,callback);
+```
+
+Esempio
+
+```js
+$("button").click(function(){
+  $.post("demo_test_post.asp",
+  {
+    name: "Donald Duck",
+    city: "Duckburg"
+  },
+  function(data, status){
+    alert("Data: " + data + "\nStatus: " + status);
+  });
+});
+```
+
+---
+
+## Free API
+
+Alcuni link a siti che offrono API gratuite
+
+<https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/>
+<https://github.com/public-apis/public-apis>
+
+---
+
 ## Fonti usate per la creazione di queste slide
 
 <https://it.wikipedia.org> : definizioni e argomenti

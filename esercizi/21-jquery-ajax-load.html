@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <title>jQuery Example</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <style>
+    .box {
+      border: 1px solid black;
+      padding: 5px;
+      margin: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Load</h1>
+  <button id="btn1">filter</button>
+
+  <div id="out" class="box">
+    out
+  </div>
+
+  <script>
+    $(function () {
+      $("#btn1").click(function () {
+        $("#out").load('https://catfact.ninja/fact');
+      });
+    });
+  </script>
+</body>
+
+</html>
