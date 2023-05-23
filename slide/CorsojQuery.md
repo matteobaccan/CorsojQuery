@@ -597,7 +597,7 @@ $("div").nextAll();
 
 ## jQuery - traversing - filter
 
-Il metodo filter() consente di specificare un criterio.
+Il metodo filter() consente di specificare un criterio d iselezione, rispetto a un selector iniziale.
 Gli elementi che soddisfano il criterio vengono restituiti.
 
 Sintassi
@@ -617,7 +617,8 @@ $("div").filter(".test");
 ## jQuery - AJAX
 
 AJAX è una tecnica per l'accesso asincrono a un server web da una pagina web.
-AJAX consente di aggiornare una pagina web senza dover ricaricare la pagina.
+
+Lo scopo di AJAXè quello di aggiornare una pagina web senza dover ricaricare la pagina.
 
 AJAX è un acronimo di Asynchronous JavaScript and XML.
 In realtà, il termine AJAX è un po' impreciso perché AJAX può essere utilizzato con altri formati di dati, come JSON.
@@ -632,7 +633,7 @@ Esempio
 
 ```js
 $("button").click(function(){
-  $("#div1").load("demo_test.txt");
+  $("#div1").load("dati.json");
 });
 ```
 
@@ -640,7 +641,7 @@ $("button").click(function(){
 
 ## jQuery - AJAX - get()
 
-Il metodo get() carica i dati dal server utilizzando una richiesta HTTP GET.
+Il metodo get() carica i dati dal server utilizzando una richiesta HTTP/GET.
 
 Sintassi
 
@@ -652,7 +653,7 @@ Esempio
 
 ```js
 $("button").click(function(){
-  $.get("demo_test.asp", function(data, status){
+  $.get("dati.asp", function(data, status){
     alert("Data: " + data + "\nStatus: " + status);
   });
 });
@@ -662,7 +663,7 @@ $("button").click(function(){
 
 ## jQuery - AJAX - post()
 
-Il metodo post() carica i dati dal server utilizzando una richiesta HTTP POST.
+Il metodo post() carica i dati dal server utilizzando una richiesta HTTP/POST.
 
 Sintassi
 
@@ -674,10 +675,10 @@ Esempio
 
 ```js
 $("button").click(function(){
-  $.post("demo_test_post.asp",
+  $.post("prova_post.asp",
   {
-    name: "Donald Duck",
-    city: "Duckburg"
+    name: "Gennano Esposito",
+    city: "Napoli"
   },
   function(data, status){
     alert("Data: " + data + "\nStatus: " + status);
@@ -689,7 +690,9 @@ $("button").click(function(){
 
 ## Free API
 
-Alcuni link a siti che offrono API gratuite
+Tramite AJAX è possibile interrogare una serie di servizi esterni. Ci sono molti siti in Interner che collezionano indirizzi di API gratuite di facile consultazione.
+
+Eccone alcuni
 
 <https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/>
 <https://github.com/public-apis/public-apis>
