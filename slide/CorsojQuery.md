@@ -597,7 +597,7 @@ $("div").nextAll();
 
 ## jQuery - traversing - filter
 
-Il metodo filter() consente di specificare un criterio d iselezione, rispetto a un selector iniziale.
+Il metodo filter() consente di specificare un criterio di selezione, rispetto a un selector iniziale.
 Gli elementi che soddisfano il criterio vengono restituiti.
 
 Sintassi
@@ -617,9 +617,7 @@ $("div").filter(".test");
 ## jQuery - AJAX
 
 AJAX è una tecnica per l'accesso asincrono a un server web da una pagina web.
-
-Lo scopo di AJAXè quello di aggiornare una pagina web senza dover ricaricare la pagina.
-
+Lo scopo di AJAX è quello di aggiornare una pagina web senza doverla ricaricare.
 AJAX è un acronimo di Asynchronous JavaScript and XML.
 In realtà, il termine AJAX è un po' impreciso perché AJAX può essere utilizzato con altri formati di dati, come JSON.
 
@@ -675,9 +673,8 @@ Esempio
 
 ```js
 $("button").click(function(){
-  $.post("prova_post.asp",
-  {
-    name: "Gennano Esposito",
+  $.post("prova_post.asp", {
+    name: "Gennaro Esposito",
     city: "Napoli"
   },
   function(data, status){
@@ -690,7 +687,7 @@ $("button").click(function(){
 
 ## Free API
 
-Tramite AJAX è possibile interrogare una serie di servizi esterni. Ci sono molti siti in Interner che collezionano indirizzi di API gratuite di facile consultazione.
+Tramite AJAX è possibile interrogare una serie di servizi esterni. Ci sono molti siti in Internet che collezionano indirizzi di API gratuite di facile consultazione.
 
 Eccone alcuni
 

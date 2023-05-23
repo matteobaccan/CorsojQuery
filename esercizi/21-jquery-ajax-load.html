@@ -15,15 +15,15 @@
 
 <body>
   <h1>Load</h1>
-  <button id="btn1">filter</button>
+  <button id="btn1">load</button>
 
   <div id="out" class="box">
     out
   </div>
 
   <script>
-    $(function () {
-      $("#btn1").click(function () {
+    $(function() {
+      $("#btn1").click(function() {
         $("#out").load('https://catfact.ninja/fact');
       });
     });
