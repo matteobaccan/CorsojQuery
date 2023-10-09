@@ -28,5 +28,11 @@ All'interno di questo corso proverò a guidarvi nell'uso di queste tecnologia la
 - AJAX
 - AJAX e free API
 
+## Slide
+
+Le slide sono disponibili nella directory `slide`. Sono in formato MD e possono essere visualizzate utilizzando un editor di testo o un visualizzatore di Markdown.
+
+__[Scarica gratuitamente le slide in formato PDF](https://github.com/matteobaccan/CorsojQuery/blob/main/slide/CorsojQuery.pdf)__
+
 [![Generazione PDF](https://github.com/matteobaccan/CorsojQuery/actions/workflows/generatepdf.yml/badge.svg)](https://github.com/matteobaccan/CorsojQuery/actions/workflows/generatepdf.yml)
 [![Validazione HTML5](https://github.com/matteobaccan/CorsojQuery/actions/workflows/validation.yml/badge.svg)](https://github.com/matteobaccan/CorsojQuery/actions/workflows/validation.yml)
